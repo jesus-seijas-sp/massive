@@ -1,0 +1,22 @@
+{
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/public/**",
+    "**/actions/**"
+  ],
+  "extends": ["airbnb-base", "plugin:jest/recommended", "prettier"],
+  "plugins": ["import", "jest", "prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ]
+  },
+  "env": {
+    "node": true,
+    "jest/globals": true
+  }
+}
